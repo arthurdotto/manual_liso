@@ -1,0 +1,166 @@
+/* APP.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("/bg-clock.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-top: 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(187, 40, 14, 0.87);
+  background: rgba(185, 55, 16, 0.1);
+  color: #ef4444;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.highlight {
+  color: #34d399;
+}
+
+.subtitle {
+  color: #d4d4d8;
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #10b981;
+  color: black;
+  text-decoration: none;
+  padding: 24px 48px;
+  border-radius: 20px;
+  font-size: 30px;
+  font-weight: 800;
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
+  transition: 0.3s;
+  animation: pulse 1.2s infinite;
+}
+
+.cta-button:hover {
+  transform: scale(1.08);
+  background: #34d399;
+}
+
+.social-proof {
+  margin-top: 32px;
+  color: #a1a1aa;
+  font-size: 16px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
+  }
+
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 45px rgba(16, 185, 129, 0.9);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .title {
+    font-size: 42px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    width: 100%;
+    font-size: 24px;
+    padding: 22px;
+  }
+}
+
+.danger {
+  color: #ef4444;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 700px;
+  height: 380px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* mobile corta topo */
+  object-position: center 55%;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .video-wrapper {
+    max-width: 900px;
+    height: 500px;
+  }
+
+  .video-player {
+    object-fit: contain;
+    object-position: center;
+  }
+}
