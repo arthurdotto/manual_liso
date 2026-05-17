@@ -33,7 +33,7 @@ export default function App() {
           </video>
         </div>
 
-        <a href="#" className="cta-button">
+        <a href="https://chat.whatsapp.com/KkQvVfr2cXrKjqIPQjHBvC" className="cta-button">
           <FaWhatsapp size={30} style={{ marginRight: "12px" }} />
           QUERO SAIR DO VERMELHO
         </a>
