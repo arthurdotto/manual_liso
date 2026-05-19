@@ -6,11 +6,10 @@ export default function App() {
     <div className="container">
       <div className="content">
 
-        <h1 className="title">Pare de adiar, Saia da m#rda hoje.</h1>
+        <h1 className="title">Cansado de baixar planilhas e continuar sem dinheiro no fim do mês?</h1>
 
         <p className="subtitle">
-          Junte-se ao grupo exclusivo e transforme sua vida financeira hoje
-          mesmo.
+          O “Manual do Liso” foi criado para quem cansou de métodos complicados e quer sair do vermelho na prática
         </p>
 
         {/* VIDEO */}
