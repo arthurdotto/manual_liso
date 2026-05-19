@@ -5,12 +5,6 @@ export default function App() {
   return (
     <div className="container">
       <div className="content">
-        {/* <h1 className="title">
-          Você não precisa{" "}
-          <span className="highlight">ganhar mais</span>{" "}
-          para sair do{" "}
-          <span className="danger">vermelho</span>
-        </h1> */}
 
         <h1 className="title">Pare de adiar, Saia da m#rda hoje.</h1>
 
